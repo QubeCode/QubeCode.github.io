@@ -1,0 +1,95 @@
+@import './chota.min.css';
+@import './leaflet.css';
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('Quicksand-VariableFont_wght.ttf')  format('truetype');
+  }
+  
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+}
+
+table {
+    width: fit-content;
+}
+
+#bar {
+    height: 10vh;
+    width: 100%;
+}
+#map-wrapper { 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    bottom: 0;
+}
+
+.floating {
+    /* position: absolute; */
+    z-index: 1;
+    background: none;
+    backdrop-filter: blur(10px) brightness(.8);
+}
+
+.title {
+    backdrop-filter: blur(5px) brightness(.7) !important;
+    align-self: center;
+    backdrop-filter: none;
+    font-size: 30px;
+    pointer-events: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    text-align: right;
+}
+
+#details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#toilet_badges {
+    width: fit-content;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.backbutton {
+    position: absolute;
+    bottom: 2vh;
+}
+
+
+/* 
+.preferences_box {
+    background-color: #ddd;
+    border: 1px solid black;
+    width: 33vw;
+    margin: 10px;
+} */

@@ -1,1 +1,39 @@
-<html>hello world</html>
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="./style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <script src="./leaflet.js"></script>
+  <title>Wo Klo? 🚽</title>
+</head>
+
+<body>
+  <nav class="nav" id="bar">
+    <p class="button floating title" style="top: 2vh;" href="#">
+      Wo Klo? 🚽
+    </p>
+    <div class="nav-right">
+      <a class="button outline floating" style="top: 2vh;" href="#" title="Zentrieren" id="center_button">
+        <img src="icons/map-pin.svg">
+      </a>
+      <a class="button outline floating" style="top: 2vh;" href="settings.html" title="Einstellungen">
+        <img src="icons/settings.svg">
+      </a>
+    </div>
+  </nav>
+  <div id="map-wrapper"></div>
+  <div id="details">
+      <h1 id="toilet_name"></h1>
+      <div id="toilet_badges"></div>
+      <a class="button outline floating" title="Zurück zur Karte" id="google_maps_button">
+          Zu Google Maps
+        </a>
+      <a class="button outline floating backbutton" href="app.html" title="Zurück zur Karte">
+          zurück
+        </a>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
